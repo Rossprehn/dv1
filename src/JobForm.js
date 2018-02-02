@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function JobForm() {
+export default function JobForm({ onSubmit }) {
   return (
-    <form className="job-form">
+    <form className="job-form test" onSubmit={onSubmit}>
       <label htmlFor="title">Title</label>
       <input type="text" name="title" />
       <label htmlFor="pay">Compensation</label>
